@@ -1,0 +1,81 @@
+*{margin: 0;}
+
+.header {
+    background: skyblue;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.control-panel {
+    background: skyblue;
+    text-align: right;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.languages {
+    background: white;
+    border: 1px solid gray;
+}
+
+#editor { height: 400px; }
+
+.button-container {
+    text-align: right;
+    padding: 4px;
+}
+
+.btn-check {
+    background: skyblue;
+    color: black;
+    border-color: gray;
+    padding: 8px;
+    border: 1;
+}
+
+.btn-save {
+    background: rgb(0, 255, 102);
+    color: black;
+    border-color: gray;
+    padding: 8px;
+    border: 1;
+}
+
+.output-container {
+    display: flex;
+    position: relative;
+    text-align: left;
+    padding: 4px;
+}
+
+.box-terminal {
+    width: 55%;
+    position: relative;
+}
+
+.box-check {
+    background: rgb(126, 249, 204);
+    color: black;
+    position: relative;
+    border: 3px solid rgb(68, 68, 68);
+    padding: 10px;
+    width: 45%;
+}
+
+.check-header {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.check-output {
+    font-size: 13px;
+    padding: 5px;
+    display: flex;
+}
+
+/*# sourceMappingURL=/style.78032849.css.map */

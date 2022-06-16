@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web-based IDE</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="header">
+    Web-based IDE
+  </div>
+
+  <div class="control-panel">
+    Select Language:
+    &nbsp;
+    <select id="languages" class="languages" onchange="changeLanguage()">
+      <option value="python"> Python </option>
+      <option value="java"> Java </option>
+    </select>
+  </div>
+
+  <div class="editor" id="editor"></div>
+
+  <div class="button-container">
+    <input type="text" id="file_name" value="code">
+    <button class="btn-check" id="check"> Check </button>
+    <button class="btn-save" id="save"> Save </button>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="ace-builds/src-noconflict/theme-monokai.js"></script>
+
+  <div class="output-container">
+    <div class="box-terminal" id="terminal-container"></div>
+    <div class="box-check">
+      <div class="check-header">Output</div>
+      <div id="check-output"></div>
+    </div>
+  </div>
+
+  <script src="src/Terminal.js"></script>
+  <script src="src/Editor.js"></script>
+</body>
+
+</html>
